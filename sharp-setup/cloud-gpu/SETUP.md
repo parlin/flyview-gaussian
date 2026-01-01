@@ -25,9 +25,16 @@ Copy and paste each cell:
 ```
 
 ```python
-# Cell 2: Install dependencies
+# Cell 2: Install dependencies (ignore Colab's dependency warnings)
 !pip install -r requirements.txt -q
+
+# The warnings about numpy/requests/fsspec conflicts are from Colab's 
+# pre-installed packages - they don't affect SHARP functionality
 ```
+
+> ⚠️ **Note**: You'll see dependency conflict warnings - this is normal. 
+> Colab has pre-installed packages that conflict with SHARP's requirements.
+> SHARP will still work correctly. Just continue to the next cell.
 
 ```python
 # Cell 3: Verify GPU
