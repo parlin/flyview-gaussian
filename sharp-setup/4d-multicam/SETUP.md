@@ -1,6 +1,34 @@
 # 4D Gaussian Splatting from Multi-Camera Video
 
-> For unsynchronized multi-camera recordings → 4D Gaussian Splatting
+> For multi-camera recordings → 4D Gaussian Splatting
+
+👉 **See [GUIDE.md](./GUIDE.md) for complete step-by-step instructions**
+
+---
+
+## Quick Start
+
+```bash
+# 1. On your Mac - prepare data
+cd ~/4dgs-project
+python scripts/sync_audio.py         # Find sync offsets
+python scripts/extract_frames.py     # Extract synced frames
+zip -r dataset.zip dataset/          # Package for upload
+
+# 2. On Google Colab - train model  
+# Upload 4DGS_MultiCam_Colab.ipynb and run all cells
+```
+
+---
+
+## Files in This Folder
+
+| File | Description |
+|------|-------------|
+| **GUIDE.md** | Complete step-by-step tutorial |
+| **4DGS_MultiCam_Colab.ipynb** | Ready-to-use Colab notebook |
+| **scripts/sync_audio.py** | Auto-sync videos using audio |
+| **scripts/extract_frames.py** | Extract synchronized frames |
 
 ---
 
