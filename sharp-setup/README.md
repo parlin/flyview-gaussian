@@ -1,6 +1,12 @@
-# SHARP Setup - Choose Your Path
+# Gaussian Splatting Setup - Choose Your Path
 
-Three parallel implementation paths for [Apple ml-sharp](https://github.com/apple/ml-sharp).
+Implementation paths for 3D/4D Gaussian Splatting.
+
+## Single Image → 3DGS (Apple SHARP)
+Three parallel paths for [Apple ml-sharp](https://github.com/apple/ml-sharp).
+
+## Multi-Camera Video → 4DGS
+See [4d-multicam/](./4d-multicam/SETUP.md) for dynamic 4D Gaussian Splatting from multiple camera angles.
 
 ---
 
@@ -34,9 +40,15 @@ Three parallel implementation paths for [Apple ml-sharp](https://github.com/appl
 - **Output**: `.ply` files + `.mp4` videos
 - **Cost**: Free (Colab) or $0.20-2.00/hr (paid)
 
+### 📁 [4d-multicam/](./4d-multicam/SETUP.md) ⭐ NEW
+- **Input**: Multiple MP4 videos from different angles
+- **Features**: 4D Gaussian Splatting (dynamic scenes)
+- **Key Tech**: SyncTrack4D (coming), 4D Gaussians (available)
+- **Best For**: Multi-cam event recordings
+
 ---
 
-## Feature Comparison
+## Feature Comparison (Single Image)
 
 | Feature | MacBook | NVIDIA PC | Cloud GPU |
 |---------|---------|-----------|-----------|
